@@ -13,7 +13,7 @@
     }
 
     function ampmMsg(k) {
-        if (k > 1 && k <= 4.59) {
+        if (k > 0 && k <= 4.59) {
             document.getElementById('body').style.background = 'url("images/bg_images/dawn.jpg") no-repeat';
             document.getElementById('body').style.backgroundSize = 'cover';
             document.getElementById('body').style.backgroundPosition = 'center center';
