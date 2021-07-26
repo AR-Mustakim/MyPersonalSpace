@@ -1,0 +1,143 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo-container {
+    min-width: 70px;
+    position: absolute;
+    left: 4.17%;
+    right: 85.42%;
+    top: 3.91%;
+    bottom: 84.38%;
+    z-index: 1000;
+}
+
+.logo-container img{
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition-duration: 300ms;
+    transition-delay: .1s;
+    transition-timing-function: cubic-bezier(0, 0.98, -0.02);
+}
+.logo-container img:hover {
+        transform: rotate(90deg);
+    }
+
+.welcome-msg {
+    position: absolute;
+    margin: 30px 10px;
+    width: 80%;
+    height: 70%;
+    top: 15%;
+    bottom: 15%;
+    left: 10%;
+    right: 10%;
+}
+.welcome-msg h1{
+    font-size: 90px;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+}
+.welcome-msg h2{
+    font-size: 48px;
+    text-align: center;
+    margin: 5px;
+}
+.welcome-msg h3{
+    font-size: 36px;
+    text-align: center;
+    margin: 5px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* For mobile devices */
+@media only screen and (max-width: 767px) {
+  body {
+    /* The file size of this background image is 93% smaller
+     * to improve page load speed on mobile internet connections */
+  }
+    }
+
+.menus-btn {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 5%;
+    left: 93%;
+    top: 70px;
+    bottom: 90%;
+}
+.menus-btn:hover{
+    width: 51px;
+}
+
+.menus-btn img{
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.15));
+}
+
+.navigasi {
+    position: absolute;
+    margin: 0px 0px;
+    width: 100vw;
+    left: 0;
+    bottom: 0;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    visibility: hidden;
+    z-index: 500;
+    transition-delay: .10ms;
+    transition-timing-function: cubic-bezier(0, 0.98, -0.02);
+
+}
+
+.close-menu-btn {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 5%;
+    left: 93%;
+    top: 70px;
+    bottom: 90%;
+}
+
+.close-menu-btn img{ filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.15)); }
+
+.close-menu-btn:hover{
+    width: 51px;
+}
+
+.menu{
+    position: absolute;
+    margin: 30px 10px;
+    width: 80%;
+    height: 70%;
+    top: 15%;
+    bottom: 15%;
+    left: 10%;
+    right: 10%;
+    text-align: center;
+
+}
+.menu ul li {
+    list-style: none;
+    margin: 15px;
+}
+.menu ul li a {
+    font-size: 48px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    /*transition-duration: 150ms;
+    transition-timing-function: ease;*/
+}
+
+
+.menu ul li a:hover {
+    text-shadow: 2px 2px 4px rgba(251, 191, 255, 0.25);
+    font-size: 49.5px;
+    color: #ffffff;
+}
