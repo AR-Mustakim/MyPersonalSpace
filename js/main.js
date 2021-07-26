@@ -13,7 +13,7 @@
     }
 
     function ampmMsg(k) {
-        if (k > 0 && k <= 4.59) {
+        if (k > 0.0 && k <= 4.59) {
             document.getElementById('body').style.background = 'url("images/bg_images/dawn.jpg") no-repeat';
             document.getElementById('body').style.backgroundSize = 'cover';
             document.getElementById('body').style.backgroundPosition = 'center center';
@@ -43,7 +43,7 @@
             document.getElementById('body').style.color = "#FFFFFF";
             document.getElementById('body').style.textShadow = "0px 4px 5px rgba(0, 0, 0, 0.25)";
             k = " I wish you a Very Good Evening";
-        } else if (k > 20.59 && k < 24.59) {
+        } else if (k > 20.59 && k < 23.59) {
             document.getElementById('body').style.background = 'url("images/bg_images/night.jpg") no-repeat';
             document.getElementById('body').style.backgroundSize = 'cover';
             document.getElementById('body').style.backgroundPosition = 'center center';
