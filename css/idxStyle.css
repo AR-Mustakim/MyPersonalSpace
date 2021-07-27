@@ -70,7 +70,7 @@
         background-color: rgba(0, 0, 0, 0.55);
         visibility: hidden;
         z-index: 500;
-        transition-timing-function: ease-out;
+        align-items: center;
     }
     .close-menu-btn {
         width: 30px;
@@ -91,8 +91,6 @@
         height: 70%;
         top: 15%;
         bottom: 15%;
-        left: 5%;
-        right: 5%;
         text-align: center;
     }
     .menu-container ul li {
@@ -103,8 +101,6 @@
         font-size: 18px;
         color: #ffffff;
         text-decoration: none;
-        /*transition-duration: 150ms;
-        transition-timing-function: ease;*/
     }
 }
 
@@ -314,7 +310,7 @@
     .close-menu-btn:hover {
         width: 51px;
     }
-    .menu {
+    .menu-container {
         position: absolute;
         margin: 30px 10px;
         width: 80%;
@@ -325,11 +321,11 @@
         right: 10%;
         text-align: center;
     }
-    .menu ul li {
+    .menu-container ul li {
         list-style: none;
         margin: 25px;
     }
-    .menu ul li a {
+    .menu-container ul li a {
         font-size: 48px;
         color: #ffffff;
         text-align: center;
