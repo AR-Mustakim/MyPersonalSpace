@@ -2,19 +2,18 @@ body {
     overflow-x: hidden;
 }
 
-.gallery-container {
-    position: absolute;
-    margin: 30px 10px;
-    width: 70%;
-    height: auto;
-    align-items: center;
-    top: 15%;
-    bottom: 15%;
-    left: 15%;
-    right: 15%;
-}
-
 @media screen and (min-width:400px) {
+    .gallery-container {
+        position: absolute;
+        margin: 30px 10px;
+        width: 70%;
+        height: auto;
+        align-items: center;
+        top: 15%;
+        bottom: 15%;
+        left: 15%;
+        right: 15%;
+    }
     .album-container {
         margin: 0;
         padding: 0;
@@ -234,6 +233,17 @@ body {
 }
 
 @media screen and (max-width:400px) {
+    .gallery-container {
+        position: absolute;
+        margin: 30px 10px;
+        width: 70%;
+        height: auto;
+        align-items: center;
+        top: 15%;
+        bottom: 15%;
+        left: 15%;
+        right: 15%;
+    }
     .album-container {
         margin: 0;
         padding: 0;
