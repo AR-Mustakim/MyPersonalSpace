@@ -14,7 +14,7 @@ body {
     right: 15%;
 }
 
-@media screen and (min-width:500px) {
+@media screen and (min-width:400px) {
     .album-container {
         margin: 0;
         padding: 0;
@@ -233,7 +233,7 @@ body {
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:400px) {
     .album-container {
         margin: 0;
         padding: 0;
