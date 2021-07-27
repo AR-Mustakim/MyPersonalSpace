@@ -2,7 +2,7 @@ body {
     overflow-x: hidden;
 }
 
-@media screen and (min-width:400px) {
+@media screen and (min-width: 449px) {
     .gallery-container {
         position: absolute;
         margin: 30px 10px;
@@ -232,7 +232,7 @@ body {
     }
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width: 450px) {
     .gallery-container {
         position: absolute;
         margin: 30px 10px;
@@ -274,11 +274,11 @@ body {
         width: 100%;
         grid-area: albumPhotoContainer;
         display: grid;
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template: "img1 img1" "img1 img1" "img3 img2" "img3 img4" "img5 img5" "img5 img5" "img6 img7" "img6 img8" "img10 img9" "img11 img9" "img12 img14" "img12 img17" "img13 img13" "img13 img13" "img15 img15" "img15 img15" "img16 img16" "img18 img19" "img18 img19" "img20 img21" "img22 img24" "img23 img23" "img23 img23";
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template: "img1 img1" "img3 img2" "img3 img4" "img5 img5" "img5 img5" "img6 img7" "img6 img8" "img10 img9" "img11 img9" "img12 img14" "img12 img17" "img13 img13" "img15 img15" "img15 img15" "img16 img16" "img18 img19" "img18 img19" "img20 img21" "img22 img24" "img23 img23";
     }
     .container {
         position: relative;
@@ -311,7 +311,7 @@ body {
     }
     .image {
         width: 100%;
-        max-height: 400px;
+        max-height: 250px;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -320,109 +320,109 @@ body {
         background-image: url("../images/album/1.jpg");
         grid-area: img1;
         width: 100%;
-        height: 400px;
+        height: 250px;
     }
     .img2 {
         background-image: url("../images/album/2.jpg");
         grid-area: img2;
         width: 100%;
-        height: 200px;
+        height: 125px;
     }
     .img3 {
         background-image: url("../images/album/3.jpg");
         grid-area: img3;
         width: 100%;
-        height: 400px;
+        height: 250px;
     }
     .img4 {
         background-image: url("../images/album/4.jpg");
         grid-area: img4;
         width: 100%;
-        height: 200px;
+        height: 125px;
     }
     .img5 {
         background-image: url("../images/album/5.jpg");
         grid-area: img5;
         width: 100%;
-        height: 400px;
+        height: 250px;
     }
     .img6 {
         background-image: url("../images/album/6.jpg");
         grid-area: img6;
         width: 100%;
-        height: 400px;
+        height: 250px;
     }
     .img7 {
         background-image: url("../images/album/7.jpg");
         grid-area: img7;
         width: 100%;
-        height: 200px;
+        height: 125px;
     }
     .img8 {
         background-image: url("../images/album/8.jpg");
         grid-area: img8;
         width: 100%;
-        height: 200px;
+        height: 125px;
     }
     .img9 {
         background-image: url("../images/album/9.jpg");
         grid-area: img9;
         width: 100%;
-        height: 400px;
+        height: 250px;
     }
     .img10 {
         background-image: url("../images/album/10.jpg");
         grid-area: img10;
         width: 100%;
-        height: 200px;
+        height: 125px;
     }
     .img11 {
         background-image: url("../images/album/11.jpg");
         grid-area: img11;
         width: 100%;
-        height: 200px;
+        height: 125px;
     }
     .img12 {
         background-image: url("../images/album/12.jpg");
         grid-area: img12;
         width: 100%;
-        height: 400px;
+        height: 250px;
     }
     .img13 {
         background-image: url("../images/album/13.jpg");
         grid-area: img13;
         width: 100%;
-        height: 400px;
+        height: 250px;
     }
     .img14 {
         background-image: url("../images/album/14.jpg");
         grid-area: img14;
         width: 100%;
-        height: 200px;
+        height: 125px;
     }
     .img15 {
         background-image: url("../images/album/15.jpg");
         grid-area: img15;
         width: 100%;
-        height: 400px;
+        height: 250px;
     }
     .img16 {
         background-image: url("../images/album/16.jpg");
         grid-area: img16;
         width: 100%;
-        height: 400px;
+        height: 250px;
     }
     .img17 {
         background-image: url("../images/album/17.jpg");
         grid-area: img17;
         width: 100%;
-        height: 200px;
+        height: 125px;
     }
     .img18 {
         background-image: url("../images/album/18.jpg");
         grid-area: img18;
         width: 100%;
-        height: 400px;
+        height: 250px;
     }
     .img19 {
         background-image: url("../images/album/19.jpg");
@@ -434,30 +434,30 @@ body {
         background-image: url("../images/album/20.jpg");
         grid-area: img20;
         width: 100%;
-        height: 200px;
+        height: 125px;
     }
     .img21 {
         background-image: url("../images/album/21.jpg");
         grid-area: img21;
         width: 100%;
-        height: 200px;
+        height: 125px;
     }
     .img22 {
         background-image: url("../images/album/22.jpg");
         grid-area: img22;
         width: 100%;
-        height: 200px;
+        height: 125px;
     }
     .img23 {
         background-image: url("../images/album/23.jpg");
         grid-area: img23;
         width: 100%;
-        height: 400px;
+        height: 250px;
     }
     .img24 {
         background-image: url("../images/album/24.jpg");
         grid-area: img24;
         width: 100%;
-        height: 200px;
+        height: 125px;
     }
 }
