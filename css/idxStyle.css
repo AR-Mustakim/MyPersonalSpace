@@ -3,13 +3,18 @@ img {
     height: auto;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .logo-container {
-    min-width: 70px;
+    width: 110px;
+    min-height: 70px;
     position: absolute;
     left: 4.17%;
     right: 85.42%;
-    top: 3.91%;
-    bottom: 84.38%;
+    top: 50px;
+    bottom: 90%;
     z-index: 1000;
 }
 
@@ -54,14 +59,7 @@ img {
     margin: 5px;
 }
 
-body {
-    font-family: 'Montserrat', sans-serif;
-}
-
-
-/* For mobile devices */
-
-.menus-btn {
+.menus-btn-container {
     width: 50px;
     height: 50px;
     position: absolute;
@@ -71,11 +69,11 @@ body {
     bottom: 90%;
 }
 
-.menus-btn:hover {
+.menus-btn-container:hover {
     width: 51px;
 }
 
-.menus-btn img {
+.menus-btn-container img {
     filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.15));
 }
 
@@ -85,8 +83,8 @@ body {
     width: 100vw;
     left: 0;
     bottom: 0;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.75);
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
     visibility: hidden;
     z-index: 500;
     transition-delay: .10ms;

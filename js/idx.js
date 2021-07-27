@@ -13,29 +13,31 @@
     }
 
     function ampmMsg(k) {
-        if (k > 0.0 && k <= 4.59) {
+        if (k > 4 && k <= 5.0) {
             document.getElementById('body').style.background = 'url("images/bg_images/dawn.jpg") no-repeat';
             document.getElementById('body').style.backgroundSize = 'cover';
             document.getElementById('body').style.backgroundPosition = 'center center';
             document.getElementById('body').style.backgroundAttachment = "fixed";
             document.getElementById('body').style.textShadow = "0px 4px 5px rgba(0, 0, 0, 0.25)";
             k = " I wish you a Very Good Morning";
-        } else if (k > 4.59 && k <= 10.59) {
+
+        } else if (k > 5 && k <= 11.59) {
             document.getElementById('body').style.background = 'url("images/bg_images/morning.jpg") no-repeat';
             document.getElementById('body').style.backgroundSize = 'cover';
             document.getElementById('body').style.backgroundPosition = 'center center';
             document.getElementById('body').style.backgroundAttachment = "fixed";
             document.getElementById('body').style.textShadow = "0px 4px 5px rgba(0, 0, 0, 0.25)";
             k = " I wish you a Very Good Morning";
-        } else if (k > 10.59 && k <= 17.59) {
-            document.getElementById('body').style.background = 'url("images/bg_images/noon.jpg") no-repeat';
+
+        } else if (k > 11.59 && k <= 17.0) {
+            document.getElementById('body').style.background = 'url("images/bg_images/afternoon.jpg") no-repeat';
             document.getElementById('body').style.backgroundSize = 'cover';
             document.getElementById('body').style.backgroundPosition = 'center center';
             document.getElementById('body').style.backgroundAttachment = "fixed";
             document.getElementById('body').style.textShadow = "0px 4px 5px rgba(0, 0, 0, 0.25)";
-
             k = " I wish you a Very Good Days";
-        } else if (k > 17.59 && k <= 20.59) {
+
+        } else if (k > 17.0 && k <= 20.0) {
             document.getElementById('body').style.background = 'url("images/bg_images/evening.jpg") no-repeat';
             document.getElementById('body').style.backgroundSize = 'cover';
             document.getElementById('body').style.backgroundPosition = 'center center';
@@ -43,7 +45,8 @@
             document.getElementById('body').style.color = "#FFFFFF";
             document.getElementById('body').style.textShadow = "0px 4px 5px rgba(0, 0, 0, 0.25)";
             k = " I wish you a Very Good Evening";
-        } else if (k > 20.59 && k < 23.59) {
+
+        } else if (k > 20.0 && k <= 23.59) {
             document.getElementById('body').style.background = 'url("images/bg_images/night.jpg") no-repeat';
             document.getElementById('body').style.backgroundSize = 'cover';
             document.getElementById('body').style.backgroundPosition = 'center center';
@@ -51,6 +54,16 @@
             document.getElementById('body').style.color = "#FFFFFF";
             document.getElementById('body').style.textShadow = "0px 4px 5px rgba(0, 0, 0, 0.25)";
             k = " I wish you a Very Good Night";
+
+        } else if (k > 0.0 && k <= 4) {
+            document.getElementById('body').style.background = 'url("images/bg_images/lateNight.jpg") no-repeat';
+            document.getElementById('body').style.backgroundSize = 'cover';
+            document.getElementById('body').style.backgroundPosition = 'center center';
+            document.getElementById('body').style.backgroundAttachment = "fixed";
+            document.getElementById('body').style.color = "#FFFFFF";
+            document.getElementById('body').style.textShadow = "0px 4px 5px rgba(0, 0, 0, 0.25)";
+            k = " I wish you a Very Good Night";
+
         } else {
             k = " I wish you a Very Good Days";
         }
@@ -76,12 +89,12 @@
 
 
 let statusNavigasi = false;
-document.getElementById("menus-btn").addEventListener("click", toogleNav);
+document.getElementById("menus-btn-container").addEventListener("click", toogleNav);
 document.getElementById("close-menu-btn").addEventListener("click", toogleNav);
 
 function toogleNav() {
     let getMsg = document.querySelector(".welcome-msg");
-    let getMenuBtn = document.querySelector(".menus-btn");
+    let getMenuBtn = document.querySelector(".menus-btn-container");
     let getNavigasi = document.querySelector(".navigasi");
 
     if (statusNavigasi === false) {
