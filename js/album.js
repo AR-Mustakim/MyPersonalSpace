@@ -25,14 +25,14 @@
             document.getElementById('body').style.backgroundAttachment = "fixed";
             document.getElementById('body').style.textShadow = "0px 4px 5px rgba(0, 0, 0, 0.25)";
         } else if (k > 17.0 && k <= 20.0) {
-            document.getElementById('body').style.background = 'linear-gradient(#E48C80 , #CE5C7E )o-repeat';
+            document.getElementById('body').style.background = 'linear-gradient(#E48C80 , #CE5C7E ) no-repeat';
             document.getElementById('body').style.backgroundSize = 'cover';
             document.getElementById('body').style.backgroundPosition = 'center center';
             document.getElementById('body').style.backgroundAttachment = "fixed";
             document.getElementById('body').style.color = "#FFFFFF";
             document.getElementById('body').style.textShadow = "0px 4px 5px rgba(0, 0, 0, 0.25)";
         } else if (k > 20.0 && k <= 23.59) {
-            document.getElementById('body').style.background = 'linear-gradient(#697AD2 , #54478C )repeat';
+            document.getElementById('body').style.background = 'linear-gradient(#697AD2 , #54478C ) no-repeat';
             document.getElementById('body').style.backgroundSize = 'cover';
             document.getElementById('body').style.backgroundPosition = 'center center';
             document.getElementById('body').style.backgroundAttachment = "fixed";
