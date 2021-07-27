@@ -23,29 +23,25 @@
     .welcome-msg {
         position: absolute;
         margin: 30px 10px;
-        width: 80%;
-        height: auto;
+        width: 90%;
+        height: 100%;
         top: 15%;
-        left: 10%;
-        right: 10%;
         bottom: 15%;
+        text-align: center;
     }
     .welcome-msg h1 {
         font-size: 32px;
-        text-align: center;
         margin-top: 10px;
         margin-bottom: 0px;
         font-weight: bold;
     }
     .welcome-msg h2 {
         font-size: 20px;
-        text-align: center;
         margin-top: 0px;
         margin-bottom: 3px;
     }
     .welcome-msg h3 {
         font-size: 16px;
-        text-align: center;
         margin: 5px;
     }
     .menus-btn-container {
