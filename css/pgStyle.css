@@ -1,4 +1,4 @@
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 650px) {
     body {
         overflow-x: hidden;
     }
@@ -7,7 +7,7 @@
         width: 80%;
         height: auto;
         align-items: center;
-        top: 90px;
+        top: 70px;
         bottom: 15%;
         left: 10;
         right: 10%;
@@ -69,9 +69,10 @@
     .text {
         white-space: nowrap;
         color: white;
-        font-size: 15px;
+        font-size: 12px;
         position: absolute;
         overflow: hidden;
+        text-align: center;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -230,9 +231,235 @@
     }
 }
 
-@media screen and (min-width: 701px) and (max-width: 900px) {
+@media screen and (min-width: 651px) and (max-width: 900px) {
     body {
         overflow-x: hidden;
+    }
+    .gallery-container {
+        position: absolute;
+        width: 80%;
+        height: auto;
+        align-items: center;
+        top: 100px;
+        bottom: 15%;
+        left: 10;
+        right: 10%;
+    }
+    .album-container {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        display: grid;
+        grid-area: albumContainer;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template: "albumHeaderContainer" "albumPhotoContainer";
+    }
+    .album-header-container {
+        grid-area: albumHeaderContainer;
+        display: grid;
+    }
+    .album-header-container h1 {
+        font-size: 28px;
+        text-align: center;
+        margin: 0;
+        font-weight: bold;
+    }
+    .album-header-container h2 {
+        font-size: 14px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .album-photo-container {
+        position: absolute;
+        width: 100%;
+        grid-area: albumPhotoContainer;
+        display: grid;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template: "img1 img1 img2" "img1 img1 img3" "img4 img5 img3" "img6 img7 img8" "img6 img10 img9" "img22 img22 img9" "img12 img13 img13" "img14 img14 img15" "img16 img16 img17" "img16 img16 img20" "img21 img19 img24" "img11 img19 img18" "img23 img23 img18";
+    }
+    .overlay-container {
+        position: relative;
+        width: 50%;
+    }
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: .3s ease-in-out;
+    }
+    .overlay-container:hover .overlay {
+        height: 50%;
+    }
+    .text {
+        white-space: nowrap;
+        color: white;
+        font-size: 15px;
+        position: absolute;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
+    .image {
+        width: 100%;
+        max-height: 355px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    .img1 {
+        background-image: url("../images/album/1.jpg");
+        grid-area: img1;
+        width: 100%;
+        min-height: 255px;
+    }
+    .img2 {
+        background-image: url("../images/album/2.jpg");
+        grid-area: img2;
+        width: 100%;
+        height: 135px;
+    }
+    .img3 {
+        background-image: url("../images/album/3.jpg");
+        grid-area: img3;
+        width: 100%;
+        min-height: 275px;
+    }
+    .img4 {
+        background-image: url("../images/album/4.jpg");
+        grid-area: img4;
+        width: 100%;
+        height: 155px;
+    }
+    .img5 {
+        background-image: url("../images/album/5.jpg");
+        grid-area: img5;
+        width: 100%;
+        min-height: 125px;
+    }
+    .img6 {
+        background-image: url("../images/album/6.jpg");
+        grid-area: img6;
+        width: 100%;
+        min-height: 255px;
+    }
+    .img7 {
+        background-image: url("../images/album/7.jpg");
+        grid-area: img7;
+        width: 100%;
+        height: 155px;
+    }
+    .img8 {
+        background-image: url("../images/album/8.jpg");
+        grid-area: img8;
+        width: 100%;
+        height: 155px;
+    }
+    .img9 {
+        background-image: url("../images/album/9.jpg");
+        grid-area: img9;
+        width: 100%;
+        min-height: 255px;
+    }
+    .img10 {
+        background-image: url("../images/album/10.jpg");
+        grid-area: img10;
+        width: 100%;
+        height: 155px;
+    }
+    .img11 {
+        background-image: url("../images/album/11.jpg");
+        grid-area: img11;
+        width: 100%;
+        min-height: 125px;
+    }
+    .img12 {
+        background-image: url("../images/album/12.jpg");
+        grid-area: img12;
+        width: 100%;
+        min-height: 255px;
+    }
+    .img13 {
+        background-image: url("../images/album/13.jpg");
+        grid-area: img13;
+        width: 100%;
+        min-height: 255px;
+    }
+    .img14 {
+        background-image: url("../images/album/14.jpg");
+        grid-area: img14;
+        width: 100%;
+        min-height: 175px;
+    }
+    .img15 {
+        background-image: url("../images/album/15.jpg");
+        grid-area: img15;
+        width: 100%;
+        max-height: 210px;
+    }
+    .img16 {
+        background-image: url("../images/album/16.jpg");
+        grid-area: img16;
+        width: 100%;
+        min-height: 255px;
+    }
+    .img17 {
+        background-image: url("../images/album/17.jpg");
+        grid-area: img17;
+        width: 100%;
+        height: 125px;
+    }
+    .img18 {
+        background-image: url("../images/album/18.jpg");
+        grid-area: img18;
+        width: 100%;
+        min-height: 175px;
+    }
+    .img19 {
+        background-image: url("../images/album/19.jpg");
+        grid-area: img19;
+        width: 100%;
+        height: auto;
+    }
+    .img20 {
+        background-image: url("../images/album/20.jpg");
+        grid-area: img20;
+        width: 100%;
+        height: 125px;
+    }
+    .img21 {
+        background-image: url("../images/album/21.jpg");
+        grid-area: img21;
+        width: 100%;
+        height: 125px;
+    }
+    .img22 {
+        background-image: url("../images/album/22.jpg");
+        grid-area: img22;
+        width: 100%;
+        height: 195px;
+    }
+    .img23 {
+        background-image: url("../images/album/23.jpg");
+        grid-area: img23;
+        width: 100%;
+        min-height: 175px;
+    }
+    .img24 {
+        background-image: url("../images/album/24.jpg");
+        grid-area: img24;
+        width: 100%;
+        height: 125px;
     }
 }
 
@@ -242,7 +469,6 @@
     }
     .gallery-container {
         position: absolute;
-        margin: 30px 10px;
         width: 80%;
         height: auto;
         align-items: center;

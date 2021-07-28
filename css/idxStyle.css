@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 650px) {
     img {
         max-width: 100%;
         height: auto;
@@ -8,6 +8,8 @@
         font-family: 'Montserrat', sans-serif;
     }
     .logo-container {
+        background-image: url("../images/logo.png");
+        background-size: cover;
         width: 45px;
         min-height: 35px;
         position: absolute;
@@ -16,9 +18,19 @@
         top: 35px;
         bottom: 90%;
         z-index: 1000;
-    }
-    .logo-container img {
         filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+    }
+    .logoL-container2 {
+        background-image: url("../images/logoL.png");
+        background-size: cover;
+        width: 45px;
+        min-height: 35px;
+        position: fixed;
+        left: 4%;
+        right: 90%;
+        top: 35px;
+        bottom: 90%;
+        z-index: 1000;
     }
     .welcome-msg {
         position: absolute;
@@ -101,7 +113,7 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 900px) {
+@media screen and (min-width: 651px) and (max-width: 900px) {
     img {
         max-width: 100%;
         height: auto;
@@ -111,13 +123,13 @@
         font-family: 'Montserrat', sans-serif;
     }
     .logo-container {
-        width: 100px;
+        width: 95px;
         min-height: 70px;
         position: absolute;
         left: 4%;
-        right: 85%;
-        top: 70px;
-        bottom: 90%;
+        right: 96%;
+        top: 5%;
+        bottom: 95%;
         z-index: 1000;
     }
     .logo-container img {
@@ -153,12 +165,12 @@
         margin-bottom: 0px;
     }
     .menus-btn-container {
-        width: 50px;
-        height: 45px;
+        width: 40px;
+        height: 35px;
         position: absolute;
-        right: 5%;
-        left: 85%;
-        top: 70px;
+        right: 10%;
+        left: 90%;
+        top: 35px;
         bottom: 90%;
     }
     .menus-btn-container img {
@@ -176,12 +188,12 @@
         z-index: 500;
     }
     .close-menu-btn {
-        width: 50px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
         position: absolute;
-        right: 5%;
-        left: 85%;
-        top: 70px;
+        right: 10%px;
+        left: 90%;
+        top: 35px;
         bottom: 90%;
     }
     .close-menu-btn img {

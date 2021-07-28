@@ -70,16 +70,22 @@ function toogleNav() {
     let getGalCont = document.querySelector(".gallery-container");
     let getMenuBtn = document.querySelector(".menus-btn-container");
     let getNavigasi = document.querySelector(".navigasi");
+    let getLogo = document.getElementById('logo-container');
+    let getLogo2 = document.getElementById('logoL-container2');
 
     if (statusNavigasi === false) {
         getGalCont.style.opacity = "0";
         getMenuBtn.style.opacity = "0";
         getNavigasi.style.visibility = "visible";
+        getLogo.style.visibility = 'hidden';
+        getLogo2.style.visibility = 'visible';
         statusNavigasi = true;
     } else if (statusNavigasi === true) {
         getGalCont.style.opacity = "1";
         getMenuBtn.style.opacity = "1";
         getNavigasi.style.visibility = "hidden";
+        getLogo.style.visibility = 'visible';
+        getLogo2.style.visibility = 'hidden';
         statusNavigasi = false;
     }
 }

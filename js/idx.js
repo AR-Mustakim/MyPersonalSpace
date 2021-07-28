@@ -96,15 +96,21 @@ function toogleNav() {
     let getMsg = document.querySelector(".welcome-msg");
     let getMenuBtn = document.querySelector(".menus-btn-container");
     let getNavigasi = document.querySelector(".navigasi");
+    let getLogo = document.getElementById('logo-container');
+    let getLogo2 = document.getElementById('logoL-container2');
 
     if (statusNavigasi === false) {
         getMsg.style.opacity = "0";
         getMenuBtn.style.opacity = "0";
+        getLogo.style.visibility = 'hidden';
+        getLogo2.style.visibility = 'visible';
         getNavigasi.style.visibility = "visible";
         statusNavigasi = true;
     } else if (statusNavigasi === true) {
         getMsg.style.opacity = "1";
         getMenuBtn.style.opacity = "1";
+        getLogo.style.visibility = 'visible';
+        getLogo2.style.visibility = 'hidden';
         getNavigasi.style.visibility = "hidden";
         statusNavigasi = false;
     }
