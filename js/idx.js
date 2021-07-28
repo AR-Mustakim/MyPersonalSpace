@@ -13,7 +13,7 @@
     }
 
     function ampmMsg(k) {
-        if (k > 4 && k <= 5.0) {
+        if (k > 4.0 && k <= 5.0) {
             document.getElementById('body').style.background = 'url("images/bg_images/dawn.jpg") no-repeat';
             document.getElementById('body').style.backgroundSize = 'cover';
             document.getElementById('body').style.backgroundPosition = 'center center';
@@ -21,7 +21,7 @@
             document.getElementById('body').style.textShadow = "0px 4px 5px rgba(0, 0, 0, 0.25)";
             k = " I wish you a Very Good Morning";
 
-        } else if (k > 5 && k <= 11.59) {
+        } else if (k > 5.0 && k <= 11.59) {
             document.getElementById('body').style.background = 'url("images/bg_images/morning.jpg") no-repeat';
             document.getElementById('body').style.backgroundSize = 'cover';
             document.getElementById('body').style.backgroundPosition = 'center center';
