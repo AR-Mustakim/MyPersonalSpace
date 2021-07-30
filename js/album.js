@@ -32,12 +32,14 @@
             document.getElementById('body').style.color = "#FFFFFF";
             document.getElementById('body').style.textShadow = "0px 4px 5px rgba(0, 0, 0, 0.25)";
         } else if (k > 20.0 && k <= 23.59) {
-            document.getElementById('body').style.background = 'linear-gradient(#697AD2 , #54478C )';
+            document.getElementById('body').style.background = 'linear-gradient(#26526B, #D6C8C8)';
             document.getElementById('body').style.backgroundSize = 'cover';
             document.getElementById('body').style.backgroundPosition = 'center center';
             document.getElementById('body').style.backgroundAttachment = "fixed";
             document.getElementById('body').style.color = "#FFFFFF";
             document.getElementById('body').style.textShadow = "0px 4px 5px rgba(0, 0, 0, 0.25)";
+            document.getElementById('menus-btn').style = "color:#00090f";
+            document.getElementById('close-btn').style = "color:#ffffff";
         } else if (k > 0.0 && k <= 4) {
             document.getElementById('body').style.background = 'linear-gradient(#54478C , #6A73BE )';
             document.getElementById('body').style.backgroundSize = 'cover';
@@ -77,14 +79,14 @@ function toogleNav() {
         getGalCont.style.opacity = "0";
         getMenuBtn.style.opacity = "0";
         getNavigasi.style.visibility = "visible";
-        getLogo.style.visibility = 'hidden';
+        getLogo.style.opacity = '0';
         getLogo2.style.visibility = 'visible';
         statusNavigasi = true;
     } else if (statusNavigasi === true) {
         getGalCont.style.opacity = "1";
         getMenuBtn.style.opacity = "1";
         getNavigasi.style.visibility = "hidden";
-        getLogo.style.visibility = 'visible';
+        getLogo.style.opacity = '1';
         getLogo2.style.visibility = 'hidden';
         statusNavigasi = false;
     }

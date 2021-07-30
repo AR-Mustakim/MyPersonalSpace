@@ -51,8 +51,11 @@
             document.getElementById('body').style.backgroundSize = 'cover';
             document.getElementById('body').style.backgroundPosition = 'center center';
             document.getElementById('body').style.backgroundAttachment = "fixed";
-            document.getElementById('body').style.color = "#FFFFFF";
-            document.getElementById('body').style.textShadow = "0px 4px 5px rgba(0, 0, 0, 0.25)";
+            document.getElementById('body').style.color = "#00090f";
+            document.getElementById('body').style.textShadow = "0px 3px 5px rgba(29, 61, 84, .35)";
+            document.getElementById('menus-btn').style = "color:#00090f";
+            document.getElementById('close-btn').style = "color:#ffffff";
+
             k = " I wish you a Very Good Night";
 
         } else if (k > 0.0 && k <= 4) {
@@ -102,14 +105,14 @@ function toogleNav() {
     if (statusNavigasi === false) {
         getMsg.style.opacity = "0";
         getMenuBtn.style.opacity = "0";
-        getLogo.style.visibility = 'hidden';
+        getLogo.style.opacity = '0';
         getLogo2.style.visibility = 'visible';
         getNavigasi.style.visibility = "visible";
         statusNavigasi = true;
     } else if (statusNavigasi === true) {
         getMsg.style.opacity = "1";
         getMenuBtn.style.opacity = "1";
-        getLogo.style.visibility = 'visible';
+        getLogo.style.opacity = '1';
         getLogo2.style.visibility = 'hidden';
         getNavigasi.style.visibility = "hidden";
         statusNavigasi = false;

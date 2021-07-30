@@ -469,13 +469,13 @@
     }
     .gallery-container {
         position: absolute;
-        width: 80%;
+        width: 70%;
         height: auto;
         align-items: center;
         top: 15%;
         bottom: 15%;
-        left: 10%;
-        right: 10%;
+        left: 15%;
+        right: 15%;
     }
     .album-container {
         margin: 0;
@@ -492,26 +492,26 @@
         display: grid;
     }
     .album-header-container h1 {
-        font-size: 72px;
+        font-size: 54px;
         text-align: center;
         margin: 0;
         font-weight: bold;
     }
     .album-header-container h2 {
-        font-size: 36px;
+        font-size: 24px;
         text-align: center;
-        font-weight: bold;
+        font-weight: lighter;
     }
     .album-photo-container {
         position: absolute;
         width: 100%;
         grid-area: albumPhotoContainer;
         display: grid;
-        grid-column-gap: 10px;
-        grid-row-gap: 10px;
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template: "img1 img1 img1 img2" "img1 img1 img1 img3" "img4 img5 img5 img3" "img6 img5 img5 img7" "img6 img8 img9 img10" "img11 img11 img9 ." "img12 img13 img13 img13" "img14 img14 img15 img15" "img16 img16 img15 img15" "img16 img16 img17 img18" ". img19 img20 img18" "img21 img19 img22 img22" "img23 img23 img23 img24";
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template: "img1 img1 img1 img2" "img1 img1 img1 img3" "img4 img5 img5 img3" "img6 img5 img5 img7" "img6 img8 img9 img10" "img22 img22 img9 img21" "img12 img13 img13 img13" "img14 img14 img11 img11" "img16 img16 img15 img15" "img18 img19 img20 img24 " "img18 img19 img17 img24 " "img23 img23 img23 img23";
     }
     .overlay-container {
         position: relative;
@@ -548,6 +548,12 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
+        transition-duration: 350ms;
+        transition-delay: .1s;
+        transition-timing-function: cubic-bezier(0, 0.98, -0.02);
+    }
+    .image:hover {
+        transform: scale(1.01);
     }
     .img1 {
         background-image: url("../images/album/1.jpg");
@@ -559,19 +565,19 @@
         background-image: url("../images/album/2.jpg");
         grid-area: img2;
         width: 100%;
-        height: 200px;
+        height: 195px;
     }
     .img3 {
         background-image: url("../images/album/3.jpg");
         grid-area: img3;
         width: 100%;
-        height: 400px;
+        height: 395px;
     }
     .img4 {
         background-image: url("../images/album/4.jpg");
         grid-area: img4;
         width: 100%;
-        height: 200px;
+        height: 195px;
     }
     .img5 {
         background-image: url("../images/album/5.jpg");
@@ -589,13 +595,13 @@
         background-image: url("../images/album/7.jpg");
         grid-area: img7;
         width: 100%;
-        height: 200px;
+        height: 195px;
     }
     .img8 {
         background-image: url("../images/album/8.jpg");
         grid-area: img8;
         width: 100%;
-        height: 200px;
+        height: 195px;
     }
     .img9 {
         background-image: url("../images/album/9.jpg");
@@ -613,7 +619,7 @@
         background-image: url("../images/album/11.jpg");
         grid-area: img11;
         width: 100%;
-        height: 200px;
+        height: 255px;
     }
     .img12 {
         background-image: url("../images/album/12.jpg");
@@ -631,7 +637,7 @@
         background-image: url("../images/album/14.jpg");
         grid-area: img14;
         width: 100%;
-        height: 200px;
+        min-height: 255px;
     }
     .img15 {
         background-image: url("../images/album/15.jpg");
@@ -679,7 +685,7 @@
         background-image: url("../images/album/22.jpg");
         grid-area: img22;
         width: 100%;
-        height: 200px;
+        min-height: 255px;
     }
     .img23 {
         background-image: url("../images/album/23.jpg");

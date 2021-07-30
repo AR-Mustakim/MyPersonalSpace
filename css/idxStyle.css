@@ -98,6 +98,8 @@
         margin-top: 30px;
         width: 90%;
         height: 70%;
+        left: 5%;
+        right: 5%;
         top: 15%;
         bottom: 15%;
         text-align: center;
@@ -107,7 +109,7 @@
         margin-top: 10px;
     }
     .menu-container ul li a {
-        font-size: 18px;
+        font-size: 26px;
         color: #ffffff;
         text-decoration: none;
     }
@@ -123,17 +125,29 @@
         font-family: 'Montserrat', sans-serif;
     }
     .logo-container {
-        width: 95px;
-        min-height: 70px;
+        background-image: url("../images/logo.png");
+        background-size: cover;
+        width: 45px;
+        min-height: 35px;
         position: absolute;
         left: 4%;
-        right: 96%;
-        top: 5%;
-        bottom: 95%;
+        right: 90%;
+        top: 35px;
+        bottom: 90%;
         z-index: 1000;
+        filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
     }
-    .logo-container img {
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    .logoL-container2 {
+        background-image: url("../images/logoL.png");
+        background-size: cover;
+        width: 45px;
+        min-height: 35px;
+        position: fixed;
+        left: 4%;
+        right: 90%;
+        top: 35px;
+        bottom: 90%;
+        z-index: 1000;
     }
     .welcome-msg {
         position: absolute;
@@ -232,23 +246,38 @@
         font-family: 'Montserrat', sans-serif;
     }
     .logo-container {
-        width: 110px;
-        min-height: 70px;
+        background-image: url("../images/logo.png");
+        background-size: cover;
+        width: 100px;
+        min-height: 75px;
         position: absolute;
-        left: 4.17%;
-        right: 85.42%;
-        top: 50px;
+        left: 4%;
+        right: 90%;
+        top: 35px;
         bottom: 90%;
-        z-index: 1000;
+        filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
     }
-    .logo-container img {
+    .logo-container {
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         transition-duration: 300ms;
         transition-delay: .1s;
         transition-timing-function: cubic-bezier(0, 0.98, -0.02);
     }
-    .logo-container img:hover {
+    .logo-container:hover {
         transform: rotate(90deg);
+    }
+    .logoL-container2 {
+        background-image: url("../images/logoL.png");
+        background-size: cover;
+        width: 100px;
+        min-height: 75px;
+        position: fixed;
+        left: 4%;
+        right: 90%;
+        top: 35px;
+        bottom: 90%;
+        z-index: 1000;
+        visibility: hidden;
     }
     .welcome-msg {
         position: absolute;
@@ -259,6 +288,7 @@
         bottom: 15%;
         left: 10%;
         right: 10%;
+        /* text-shadow: 1px 4px 4px rgba(, 1); */
     }
     .welcome-msg h1 {
         font-size: 90px;
@@ -270,26 +300,24 @@
         font-size: 48px;
         text-align: center;
         margin: 5px;
+        /* text-shadow: 1px 4px 4px rgba(29, 61, 84, 0.5); */
     }
     .welcome-msg h3 {
         font-size: 36px;
         text-align: center;
         margin: 5px;
+        /* text-shadow: 1px 4px 4px rgba(29, 61, 84, 0.5); */
     }
     .menus-btn-container {
-        width: 50px;
-        height: 50px;
         position: absolute;
         right: 5%;
-        left: 93%;
+        left: 95%;
         top: 70px;
         bottom: 90%;
+        font-size: 40px;
     }
-    .menus-btn-container:hover {
-        width: 51px;
-    }
-    .menus-btn-container img {
-        filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.15));
+    .menus-btn:hover {
+        font-size: 41px;
     }
     .navigasi {
         position: absolute;
@@ -305,19 +333,17 @@
         transition-timing-function: cubic-bezier(0, 0.98, -0.02);
     }
     .close-menu-btn {
-        width: 50px;
-        height: 50px;
         position: absolute;
         right: 5%;
-        left: 93%;
+        left: 95%;
         top: 70px;
         bottom: 90%;
     }
-    .close-menu-btn img {
-        filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.15));
+    .close-menu-btn i {
+        font-size: 50px;
     }
-    .close-menu-btn:hover {
-        width: 51px;
+    .close-menu-btn i:hover {
+        font-size: 51px;
     }
     .menu-container {
         position: absolute;
@@ -340,8 +366,8 @@
         text-align: center;
         text-decoration: none;
     }
-    .menu ul li a:hover {
-        text-shadow: 2px 2px 4px rgba(251, 191, 255, 0.25);
+    .menu-container ul li a:hover {
+        text-shadow: 2px 2px 4px rgba(253, 227, 255, 0.25);
         font-size: 49.5px;
         color: #ffffff;
     }
