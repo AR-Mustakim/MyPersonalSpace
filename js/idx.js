@@ -19,6 +19,7 @@
             document.getElementById('body').style.backgroundPosition = 'center center';
             document.getElementById('body').style.backgroundAttachment = "fixed";
             document.getElementById('body').style.textShadow = "0px 4px 5px rgba(0, 0, 0, 0.25)";
+            document.getElementById('close-btn').style = "color:#ffffff";
             k = " I wish you a Very Good Morning";
 
         } else if (k > 5.0 && k <= 11.59) {
@@ -27,6 +28,7 @@
             document.getElementById('body').style.backgroundPosition = 'center center';
             document.getElementById('body').style.backgroundAttachment = "fixed";
             document.getElementById('body').style.textShadow = "0px 4px 5px rgba(0, 0, 0, 0.25)";
+            document.getElementById('close-btn').style = "color:#ffffff";
             k = " I wish you a Very Good Morning";
 
         } else if (k > 11.59 && k <= 17.0) {
@@ -35,6 +37,7 @@
             document.getElementById('body').style.backgroundPosition = 'center center';
             document.getElementById('body').style.backgroundAttachment = "fixed";
             document.getElementById('body').style.textShadow = "0px 4px 5px rgba(0, 0, 0, 0.25)";
+            document.getElementById('close-btn').style = "color:#ffffff";
             k = " I wish you a Very Good Days";
 
         } else if (k > 17.0 && k <= 20.0) {
@@ -43,6 +46,7 @@
             document.getElementById('body').style.backgroundPosition = 'center center';
             document.getElementById('body').style.backgroundAttachment = "fixed";
             document.getElementById('body').style.color = "#FFFFFF";
+            document.getElementById('close-btn').style = "color:#ffffff";
             document.getElementById('body').style.textShadow = "0px 4px 5px rgba(0, 0, 0, 0.25)";
             k = " I wish you a Very Good Evening";
 
@@ -64,6 +68,7 @@
             document.getElementById('body').style.backgroundPosition = 'center center';
             document.getElementById('body').style.backgroundAttachment = "fixed";
             document.getElementById('body').style.color = "#FFFFFF";
+            document.getElementById('close-btn').style = "color:#ffffff";
             document.getElementById('body').style.textShadow = "0px 4px 5px rgba(0, 0, 0, 0.25)";
             k = " I wish you a Very Good Night";
 
