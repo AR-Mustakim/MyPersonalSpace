@@ -1,40 +1,42 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
 @media screen and (max-width: 650px) {
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-    body {
-        overflow-x: hidden;
-        font-family: 'Montserrat', sans-serif;
-    }
     .logo-container {
-        background-image: url("../images/logo.png");
+        background-image: url("../images/small_logo.png");
         background-size: cover;
-        width: 45px;
-        min-height: 35px;
+        width: 47px;
+        height: 35px;
         position: absolute;
-        left: 4%;
-        right: 90%;
-        top: 35px;
+        left: 5%;
+        top: 30px;
         bottom: 90%;
         z-index: 1000;
         filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
     }
     .logoL-container2 {
-        background-image: url("../images/logoL.png");
+        background-image: url("../images/small_logoL.png");
         background-size: cover;
-        width: 45px;
-        min-height: 35px;
+        width: 47px;
+        height: 35px;
         position: fixed;
-        left: 4%;
-        right: 90%;
-        top: 35px;
+        left: 5%;
+        top: 30px;
         bottom: 90%;
         z-index: 1000;
+        visibility: hidden;
     }
     .welcome-msg {
         position: absolute;
         width: 80%;
+        /* height: 80%; */
         top: 15%;
         bottom: 15%;
         left: 10%;
@@ -43,7 +45,7 @@
     }
     .welcome-msg h1 {
         font-size: 32px;
-        margin-top: 10px;
+        margin-top: 3px;
         margin-bottom: 0px;
         font-weight: bold;
     }
@@ -54,14 +56,14 @@
     }
     .welcome-msg h3 {
         font-size: 16px;
-        margin-top: 5px;
+        margin-top: 2px;
+        margin-bottom: 0px;
     }
     .menus-btn-container {
-        width: 30px;
-        min-height: 35px;
+        width: 35px;
+        height: 35px;
         position: absolute;
-        right: 25px;
-        left: 85%;
+        right: 2%;
         top: 35px;
         bottom: 90%;
     }
@@ -73,20 +75,18 @@
         margin: 0px 0px;
         width: 100%;
         height: 100%;
-        bottom: 0;
-        left: 0;
-        right: 0;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
         background-color: rgba(0, 0, 0, 0.55);
         visibility: hidden;
         z-index: 500;
-        align-items: center;
     }
     .close-menu-btn {
-        width: 30px;
+        width: 35px;
         height: 35px;
         position: absolute;
-        right: 25px;
-        left: 85%;
+        right: 2%;
         top: 35px;
         bottom: 90%;
     }
@@ -102,13 +102,13 @@
         right: 5%;
         top: 15%;
         bottom: 15%;
-        text-align: center;
     }
-    .menu-container ul li {
+    .menu-container li {
+        text-align: center;
         list-style: none;
         margin-top: 10px;
     }
-    .menu-container ul li a {
+    .menu-container li a {
         font-size: 26px;
         color: #ffffff;
         text-decoration: none;
@@ -116,65 +116,53 @@
 }
 
 @media screen and (min-width: 651px) and (max-width: 900px) {
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-    body {
-        overflow-x: hidden;
-        font-family: 'Montserrat', sans-serif;
-    }
     .logo-container {
-        background-image: url("../images/logo.png");
+        background-image: url("../images/medium_logo.png");
         background-size: cover;
-        width: 45px;
-        min-height: 35px;
+        width: 50px;
+        height: 38px;
         position: absolute;
         left: 4%;
-        right: 90%;
-        top: 35px;
+        top: 30px;
         bottom: 90%;
         z-index: 1000;
         filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
     }
     .logoL-container2 {
-        background-image: url("../images/logoL.png");
+        background-image: url("../images/medium_logoL.png");
         background-size: cover;
-        width: 45px;
-        min-height: 35px;
+        width: 50px;
+        height: 38px;
         position: fixed;
         left: 4%;
-        right: 90%;
-        top: 35px;
+        top: 30px;
         bottom: 90%;
         z-index: 1000;
+        visibility: hidden;
     }
     .welcome-msg {
         position: absolute;
-        margin-top: 30px;
-        margin-bottom: 10px;
         width: 80%;
         height: 70%;
         top: 15%;
+        bottom: 15%;
         left: 10%;
         right: 10%;
-        bottom: 15%;
+        text-align: center;
     }
     .welcome-msg h1 {
-        font-size: 72px;
-        text-align: center;
-        margin: 0;
+        font-size: 48px;
+        margin-top: 7px;
+        margin-bottom: 0px;
         font-weight: bold;
     }
     .welcome-msg h2 {
-        font-size: 48px;
-        text-align: center;
+        font-size: 32px;
         margin-top: 5px;
         margin-bottom: 0px;
     }
     .welcome-msg h3 {
-        font-size: 36px;
-        text-align: center;
+        font-size: 24px;
         margin-top: 5px;
         margin-bottom: 0px;
     }
@@ -195,8 +183,9 @@
         margin: 0px 0px;
         height: 100%;
         width: 100%;
-        left: 0;
-        bottom: 0;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
         background-color: rgba(0, 0, 0, 0.55);
         visibility: hidden;
         z-index: 500;
@@ -205,8 +194,8 @@
         width: 40px;
         height: 40px;
         position: absolute;
-        right: 10%px;
-        left: 90%;
+        right: 5px;
+        /* left: 95%; */
         top: 35px;
         bottom: 90%;
     }
@@ -215,36 +204,27 @@
     }
     .menu-container {
         position: absolute;
-        margin: 30px 10px;
+        margin-top: 30px;
         width: 90%;
         height: 70%;
-        top: 15%;
-        bottom: 15%;
         left: 5%;
         right: 5%;
-        text-align: center;
+        top: 15%;
+        bottom: 15%;
     }
-    .menu-container ul li {
+    .menu-container li {
+        text-align: center;
         list-style: none;
-        margin: 25px;
+        margin-top: 25px;
     }
-    .menu-container ul li a {
-        font-size: 48px;
+    .menu-container li a {
+        font-size: 28px;
         color: #ffffff;
-        text-align: center;
         text-decoration: none;
     }
 }
 
 @media screen and (min-width: 901px) {
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-    body {
-        overflow-x: hidden;
-        font-family: 'Montserrat', sans-serif;
-    }
     .logo-container {
         background-image: url("../images/logo.png");
         background-size: cover;
@@ -255,6 +235,7 @@
         right: 90%;
         top: 35px;
         bottom: 90%;
+        z-index: 900;
         filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
     }
     .logo-container {
@@ -356,17 +337,17 @@
         right: 10%;
         text-align: center;
     }
-    .menu-container ul li {
+    .menu-container li {
         list-style: none;
         margin: 25px;
     }
-    .menu-container ul li a {
+    .menu-container li a {
         font-size: 48px;
         color: #ffffff;
         text-align: center;
         text-decoration: none;
     }
-    .menu-container ul li a:hover {
+    .menu-container li a:hover {
         text-shadow: 2px 2px 4px rgba(253, 227, 255, 0.25);
         font-size: 49.5px;
         color: #ffffff;
